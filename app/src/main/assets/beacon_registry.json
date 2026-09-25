@@ -1,0 +1,7 @@
+{
+  "registry_version": "2026-09-24.2-single-real-beacon",
+  "uuid": "8E54C62C-F7C0-4792-A50A-BEDF49E9BE36",
+  "beacons": [
+    { "major": 1, "minor": 1, "label": "MyBeacon-1", "floor_level": 1, "x": 10.0, "y": 10.0, "rssi_1m": -50, "status": "active" }
+  ]
+}

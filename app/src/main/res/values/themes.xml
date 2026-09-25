@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base theme; Compose supplies the Material3 color scheme at runtime. -->
+    <style name="Theme.WayToGo" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
