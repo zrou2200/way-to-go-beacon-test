@@ -1,0 +1,6 @@
+{
+  "floors": [
+    { "level": 1, "name": "Ground floor", "image": "floorplans/floor1.png", "width_m": 60.0, "height_m": 40.0 },
+    { "level": 2, "name": "First floor",  "image": "floorplans/floor2.png", "width_m": 40.0, "height_m": 30.0 }
+  ]
+}

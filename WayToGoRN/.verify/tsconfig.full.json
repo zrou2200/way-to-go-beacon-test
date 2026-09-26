@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "typeRoots": ["node_modules/@types"],
+    "types": ["react", "node", "jest"],
+    "rootDir": "..",
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["../src/**/*", "../App.tsx", "rn-stubs.d.ts"]
+}

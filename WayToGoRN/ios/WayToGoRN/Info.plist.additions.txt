@@ -1,0 +1,24 @@
+Info.plist additions (iOS)
+==========================
+
+Merge these keys into ios/WayToGoRN/Info.plist so CoreLocation may range iBeacons
+(Section 6). iOS requires a location usage description; iBeacon ranging uses
+When-In-Use authorization.
+
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>WayToGo uses your location to detect nearby Bluetooth beacons and show your position on the floor plan. Your location is never stored or sent anywhere.</string>
+
+  <key>NSBluetoothAlwaysUsageDescription</key>
+  <string>WayToGo uses Bluetooth to detect nearby beacons for indoor positioning.</string>
+
+  <key>NSBluetoothPeripheralUsageDescription</key>
+  <string>WayToGo uses Bluetooth to detect nearby beacons for indoor positioning.</string>
+
+Notes
+-----
+- iBeacon ranging on iOS MUST use CoreLocation (CLBeacon), not CoreBluetooth;
+  Apple strips iBeacon manufacturer bytes from CoreBluetooth scans.
+- The WayToGoBeacon.swift module requests When-In-Use authorization on startScan.
+- Add the Swift file to the target; Xcode will prompt to create a bridging header
+  (keep the auto-generated WayToGoRN-Bridging-Header.h). The RCTEventEmitter/React
+  imports resolve via the umbrella header once the Pods are installed.

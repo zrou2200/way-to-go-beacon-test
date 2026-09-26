@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "typeRoots": ["node_modules/@types"],
+    "types": ["jest", "node"],
+    "rootDir": "..",
+    "noEmit": true
+  },
+  "include": [
+    "../src/core/**/*",
+    "../src/platform/sim/**/*",
+    "../src/platform/ble/ibeaconParser.ts",
+    "../src/platform/ble/ibeaconParser.test.ts"
+  ]
+}

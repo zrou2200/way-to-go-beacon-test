@@ -1,0 +1,30 @@
+# OSX
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+.verify/node_modules/
+
+# Metro / RN
+.expo/
+dist/
+web-build/
+*.tsbuildinfo
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+*.keystore
+!debug.keystore
+
+# iOS
+ios/Pods/
+ios/build/
+ios/*.xcworkspace/xcuserdata/
+
+# Jest
+coverage/

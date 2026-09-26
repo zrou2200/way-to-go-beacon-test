@@ -1,0 +1,41 @@
+{
+  "name": "waytogorn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WayToGo — BLE beacon indoor positioning, React Native port of the v1 spec.",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "typecheck:core": "tsc -p tsconfig.core.json --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-fs": "^2.20.0",
+    "react-native-svg": "^15.15.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/runtime": "^7.24.0",
+    "@react-native/babel-preset": "0.74.85",
+    "@react-native/eslint-config": "0.74.85",
+    "@react-native/metro-config": "0.74.85",
+    "@react-native/typescript-config": "0.74.85",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.6",
+    "@types/react-test-renderer": "^18.0.0",
+    "jest": "^29.7.0",
+    "react-test-renderer": "18.2.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
